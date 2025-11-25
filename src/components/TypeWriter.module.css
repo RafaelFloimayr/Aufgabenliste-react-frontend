@@ -1,0 +1,15 @@
+.typed-cursor {
+  display: inline-block;
+  margin-left: 2px;
+}
+
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.typed-cursor--blink {
+  animation: blink 1000ms infinite;
+}
