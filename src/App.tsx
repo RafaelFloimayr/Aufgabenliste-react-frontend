@@ -1,4 +1,3 @@
-import viteLogo from '/vite.svg'
 import './App.css'
 import Task from './components/Task'
 import NewTaskForm from './components/NewTaskForm'
