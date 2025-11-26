@@ -1,17 +1,19 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import {addTask} from '../redux/tasksSlice'
 
 interface NewTaskProps
 {
     url : string
-    setTasks: React.Dispatch<React.SetStateAction<TaskType[]>>
 }
 
-
-
-function NewTaskForm({ url, setTasks } : NewTaskProps) {
+function NewTaskForm({ url } : NewTaskProps) {
   const [title, setTitle] = useState("");
-
-  async function handleSubmit(e) {
+  
+  //redux state:
+  const dispatch = useDispatch();
+  
+  const handleSubmit = async (e) => {
     e.preventDefault(); // verhindert Seitenreload
 
     try {
@@ -28,9 +30,8 @@ function NewTaskForm({ url, setTasks } : NewTaskProps) {
       }
 
       const newTask = await response.json();
-
-      // State sofort aktualisieren
-      setTasks((prev) => [...prev, newTask]);
+      
+      dispatch(addTask(newTask));
 
       // Eingabefeld zurücksetzen
       setTitle("");
