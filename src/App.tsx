@@ -39,7 +39,7 @@ function App() {
     <>
       <div style={{ display: "flex"}}>
       <h1>📝</h1>
-      <TypeWriter texts={[{ text: "Aufgabenliste", color:"rot" }]} />
+      <TypeWriter texts={[{ text: "Aufgabenliste", color:"black" }, { text: "Checkliste", color:"black" }, { text: "To-do-Liste", color:"black" }]} />
       </div>
       <div className="layout">
         <div className="column">
