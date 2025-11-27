@@ -1,4 +1,4 @@
-# Aufgabenliste React&TypeScript Frontend
+# React&TypeScript Frontend: Aufgabenliste
 Built with React and TypeScript, powered by NPM, styled with CSS and JSS, this frontend provides the user interface layer for the Aufgabenliste application. This frontend integrates with a local Django REST API backend (demo mode), providing a responsive UI for task interaction, while the backend manages data storage and exposes API endpoints.
 
   <img width="1339" height="525" alt="ColorTheme1" src="https://github.com/user-attachments/assets/182338af-95fb-48d0-9a19-e5b5a08fb138" />
