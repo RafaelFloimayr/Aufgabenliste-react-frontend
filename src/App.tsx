@@ -49,11 +49,9 @@ function App() {
         </div>
           <div className="column">
           <NewTaskForm url={url}/>
-          <button className="styles-button" onClick={() => setIsOn(!isOn)}>
-            Switch Styles
-          </button>  
           </div>
       </div>
+      <div className={`theme-toggle ${isOn ? 'on' : 'off'}`} onClick={() => setIsOn(!isOn)} />
     </>
   )
 }
