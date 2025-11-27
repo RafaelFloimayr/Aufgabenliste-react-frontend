@@ -52,6 +52,5 @@ With this feature, users can toggle between alternative color themes for the bod
 - Global and local styles can be combined, providing flexibility for both application-wide and component-specific design.
 
 ### Alternative Theme Preview
-Here is a screenshot of the alternative theme:
 
 <img width="1342" height="533" alt="ColorTheme2" src="https://github.com/user-attachments/assets/98e1d886-de1c-460e-a14c-68982c9cb4d2" />
