@@ -2,14 +2,21 @@ import './App.css'
 import Task from './components/Task'
 import NewTaskForm from './components/NewTaskForm'
 import TypeWriter from './components/TypeWriter'
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import store from './redux/store'
 import {getNumberOfTasks, getTasks, setTasks} from './redux/tasksSlice'
 import { useSelector, useDispatch } from "react-redux";
-function App() {
+import useStyles from './App-jss';
 
- // Use Django REST framework from local backend server
- // details: https://github.com/RafaelFloimayr/Aufgabenliste
+function App() {
+  // switch body style with JSS
+  const classes = useStyles();
+  const [isOn, setIsOn] = useState(true);
+  useEffect(() => {
+    document.body.className = isOn ? 'bodyStyle1' : 'bodyStyle2';
+  }, [isOn]);
+  
+ // use Django REST framework from local backend server (see https://github.com/RafaelFloimayr/Aufgabenliste)
  const url = "http://127.0.0.1:8000/tasks/";
  const dispatch = useDispatch();
  const tasks = useSelector(getTasks);
@@ -36,12 +43,15 @@ function App() {
       </div>
       <div className="layout">
         <div className="column">
-          <ul>
+          <ul className={isOn ? classes.taskListStyle1 : classes.taskListStyle2}>
           {useSelector(getNumberOfTasks) ? tasks.map((t) => ( <Task key={t.id} url={url} task={t} /> )) : <li>Keine Einträge vorhanden.</li>}
           </ul>
         </div>
           <div className="column">
           <NewTaskForm url={url}/>
+          <button className="styles-button" onClick={() => setIsOn(!isOn)}>
+            Switch Styles
+          </button>  
           </div>
       </div>
     </>
