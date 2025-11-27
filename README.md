@@ -1,7 +1,7 @@
 # Aufgabenliste React&TypeScript Frontend
 Built with React and TypeScript, powered by NPM, styled with CSS and JSS, this frontend provides the user interface layer for the Aufgabenliste application. This frontend integrates with a local Django REST API backend (demo mode), providing a responsive UI for task interaction, while the backend manages data storage and exposes API endpoints.
 
-<img width="780" height="315" alt="Task123mini" src="https://github.com/user-attachments/assets/e140f628-b88e-4829-8e20-bf06b3d57693" />
+  <img width="1339" height="525" alt="ColorTheme1" src="https://github.com/user-attachments/assets/182338af-95fb-48d0-9a19-e5b5a08fb138" />
 
 ## Prerequisites
 
@@ -33,7 +33,11 @@ The following video shows the *Aufgabenliste* backend and *Aufgabenliste-react-f
 This layout demonstrates how the frontend and backend work together: the React client provides a modern UI, while the Django REST framework handles the data and API requests.
 
 
-https://github.com/user-attachments/assets/811169d8-0142-4bf2-9260-dc4d05df9950
+
+
+https://github.com/user-attachments/assets/1e1512e7-d86a-4a5d-9171-d45a41bddd46
+
+
 
 *This video demonstrates the interaction between the Django REST API backend and the React + TypeScript frontend, showing how tasks are managed seamlessly across both components.*
 
@@ -50,4 +54,4 @@ With this feature, users can toggle between alternative color themes for the bod
 ### Alternative Theme Preview
 Here is a screenshot of the alternative theme:
 
-<img width="393" height="196" alt="JSS_Switch_Styles" src="https://github.com/user-attachments/assets/f9c1079f-5db2-4107-864d-8b52a8fb18fc" />
+<img width="1342" height="533" alt="ColorTheme2" src="https://github.com/user-attachments/assets/98e1d886-de1c-460e-a14c-68982c9cb4d2" />
