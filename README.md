@@ -36,3 +36,18 @@ This layout demonstrates how the frontend and backend work together: the React c
 https://github.com/user-attachments/assets/811169d8-0142-4bf2-9260-dc4d05df9950
 
 *This video demonstrates the interaction between the Django REST API backend and the React + TypeScript frontend, showing how tasks are managed seamlessly across both components.*
+
+## Switch Styles Feature
+
+A **Switch Styles** button has been added to demonstrate the advantages of using **JSS** for styling in React.  
+With this feature, users can toggle between alternative color themes for the body and task list.
+
+### Benefits of JSS
+- Styles are defined directly in JavaScript, making them easy to maintain and co-locate with components.
+- Dynamic styling is supported, allowing seamless switching between different themes.
+- Global and local styles can be combined, providing flexibility for both application-wide and component-specific design.
+
+### Alternative Theme Preview
+Here is a screenshot of the alternative theme:
+
+<img width="393" height="196" alt="JSS_Switch_Styles" src="https://github.com/user-attachments/assets/f9c1079f-5db2-4107-864d-8b52a8fb18fc" />
