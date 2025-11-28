@@ -1,4 +1,4 @@
-# React&TypeScript Frontend: Aufgabenliste
+# React & TypeScript frontend: Aufgabenliste
 Built with React and TypeScript, powered by NPM, styled with CSS and JSS, this frontend provides the user interface layer for the Aufgabenliste application. This frontend integrates with a local Django REST API backend (demo mode), providing a responsive UI for task interaction, while the backend manages data storage and exposes API endpoints.
 
   <img width="1339" height="525" alt="ColorTheme1" src="https://github.com/user-attachments/assets/182338af-95fb-48d0-9a19-e5b5a08fb138" />
@@ -22,10 +22,10 @@ Built with React and TypeScript, powered by NPM, styled with CSS and JSS, this f
    ```
    npm run dev
 5. **Access the website**  
-Open [http://localhost:5173/](http://localhost:5173/) in your web browser and manage your tasks via the current React + TypeScript frontend.
+Open [http://localhost:5173/](http://localhost:5173/) in your web browser and manage your tasks via the current React & TypeScript frontend.
 
 ## Demonstration
-The following video shows the *Aufgabenliste* backend and *Aufgabenliste-react-frontend* frontend in action.  
+The following video shows the *Aufgabenliste* backend and *Aufgabenliste-react-frontend* in action.  
 - At the **top**, the main website interface is displayed.  
 - In the **bottom left**, the Django backend with the REST API interface is visible. It demonstrates the available REST commands, including **GET**, **POST**, **DELETE**, and **PATCH**, which allow you to retrieve, create, remove, and update tasks directly through the API. 
 - In the **bottom right**, the React + TypeScript frontend from this repository is running.  
